@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carta de Menú - Poke Rio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <a href="index.html" class="logo">
+            <div class="logo-letter">POKE</div>
+            <div class="logo-text">Rio</div>
+        </a>
+        
+        <ul class="nav-menu">
+            <li class="nav-item"><a href="index.html"><i class="fas fa-home"></i> Inicio</a></li>
+            <li class="nav-item"><a href="menu.html"><i class="fas fa-book-open"></i> Carta de menú</a></li>
+            <li class="nav-item"><a href="#"><i class="fas fa-phone"></i> Contacto</a></li>
+            <li class="nav-item">
+                <a href="https://api.whatsapp.com/send/?phone=573204045564&text&type=phone_number&app_absent=0" 
+                   class="whatsapp-link" 
+                   target="_blank">
+                    <i class="fab fa-whatsapp"></i> WhatsApp
+                </a>
+            </li>
+            <li class="nav-item">
+                <button id="themeToggle" class="theme-toggle">
+                    <i class="fas fa-moon"></i>
+                </button>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="cart-icon" id="cartIcon">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span class="cart-count">0</span>
+                </a>
+            </li>
+        </ul>
+        
+        <button class="menu-toggle" id="menuToggle">
+            <div class="hamburger"></div>
+        </button>
+        
+        <div class="mobile-menu" id="mobileMenu">
+            <li class="nav-item"><a href="index.html"><i class="fas fa-home"></i> Inicio</a></li>
+            <li class="nav-item"><a href="menu.html"><i class="fas fa-book-open"></i> Carta de menú</a></li>
+            <li class="nav-item"><a href="#"><i class="fas fa-phone"></i> Contacto</a></li>
+            <li class="nav-item">
+                <a href="https://api.whatsapp.com/send/?phone=573204045564&text&type=phone_number&app_absent=0" 
+                   class="whatsapp-link" 
+                   target="_blank">
+                    <i class="fab fa-whatsapp"></i> WhatsApp
+                </a>
+            </li>
+            <li class="nav-item">
+                <button id="themeToggleMobile" class="theme-toggle">
+                    <i class="fas fa-moon"></i> Modo Oscuro
+                </button>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="cart-icon">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span class="cart-count">0</span>
+                </a>
+            </li>
+        </div>
+    </header>
+    
+    <main>
+        <section class="menu-section">
+            <h2>Nuestra Carta</h2>
+            <div class="menu-container" id="menuContainer">
+                <!-- Los platos se cargarán dinámicamente con JavaScript -->
+            </div>
+        </section>
+    </main>
+    
+    <!-- Modal del Carrito -->
+    <div class="cart-modal" id="cartModal">
+        <div class="cart-content">
+            <h2>Tu Pedido</h2>
+            <div class="cart-items" id="cartItems">
+                <!-- Los items del carrito se cargarán aquí -->
+            </div>
+            <div class="cart-total">
+                Total: $<span id="cartTotal">0</span>
+            </div>
+            <div class="cart-actions">
+                <button class="btn close-cart">Seguir Comprando</button>
+                <a href="#" class="btn checkout-btn" id="checkoutBtn">Realizar Pedido</a>
+            </div>
+        </div>
+    </div>
+    
+    <footer>
+        <p>&copy; 2025 Poke Rio - Todos los derechos reservados</p>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="menu.js"></script>
+    <script type="module" src="main.js"></script>
+</body>
+</html>

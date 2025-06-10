@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Poke Rio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <a href="#" class="logo">
+            <div class="logo-letter">POKE</div>
+            <div class="logo-text">Rio</div>
+        </a>
+        
+        <ul class="nav-menu">
+            <li class="nav-item"><a href="#"><i class="fas fa-home"></i> Inicio</a></li>
+            <li class="nav-item"><a href="menu.html"><i class="fas fa-book-open"></i> Carta de menú</a></li>
+            <li class="nav-item"><a href="#"><i class="fas fa-phone"></i> Contacto</a></li>
+            <li class="nav-item">
+                <a href="https://api.whatsapp.com/send/?phone=573204045564&text&type=phone_number&app_absent=0" 
+                   class="whatsapp-link" 
+                   target="_blank">
+                    <i class="fab fa-whatsapp"></i> WhatsApp
+                </a>
+            </li>
+            <li class="nav-item">
+                <button id="themeToggle" class="theme-toggle">
+                    <i class="fas fa-moon"></i>
+                </button>
+            </li>
+        </ul>
+        
+        <button class="menu-toggle" id="menuToggle">
+            <div class="hamburger"></div>
+        </button>
+        
+        <div class="mobile-menu" id="mobileMenu">
+            <li class="nav-item"><a href="#"><i class="fas fa-home"></i> Inicio</a></li>
+            <li class="nav-item"><a href="menu.html"><i class="fas fa-book-open"></i> Carta de menú</a></li>
+            <li class="nav-item"><a href="contact.html"><i class="fas fa-phone"></i> Contacto</a></li>
+            <li class="nav-item">
+                <a href="https://api.whatsapp.com/send/?phone=573204045564&text&type=phone_number&app_absent=0" 
+                   class="whatsapp-link" 
+                   target="_blank">
+                    <i class="fab fa-whatsapp"></i> WhatsApp
+                </a>
+            </li>
+            <li class="nav-item">
+                <button id="themeToggleMobile" class="theme-toggle">
+                    <i class="fas fa-moon"></i> Modo Oscuro
+                </button>
+            </li>
+        </div>
+    </header>
+    
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Poke Rio</h1>
+                <p>Sabores excepcionales, ingredientes frescos y una experiencia gastronómica inolvidable</p>
+                <a href="menu.html" class="btn">Ver nuestra carta</a>
+            </div>
+        </section>
+        
+        <section class="about">
+            <h2>Nuestra Filosofía</h2>
+            <p>En Poke Rio, creemos que la excelencia gastronómica se logra a través de la combinación perfecta entre ingredientes de la más alta calidad y técnicas culinarias innovadoras. Cada plato es una obra de arte cuidadosamente elaborada por nuestros chefs.</p>
+        </section>
+    </main>
+    
+    <footer>
+        <p>&copy; 2025 Poke Rio - Todos los derechos reservados</p>
+    </footer>
+
+    <script src="script.js"></script>
+    <script type="module" src="main.js"></script>
+</body>
+</html>
